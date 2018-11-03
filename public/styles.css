@@ -1,0 +1,29 @@
+body{
+    font-size: 30px;
+}
+
+header{
+    background-color: lightblue;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3{
+    display: inline-block;
+}
+
+a.btn{
+    color: black;
+}
+
+
+textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-family: Consolas, Menlo, Monaco;
+}
+
+div.error{
+    color: red;
+    text-align: center;
+}

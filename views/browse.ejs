@@ -1,0 +1,12 @@
+<% include header %>
+
+<h2>Click a file to edit</h2>
+<p>Directory: <%= dir %></p>
+<ul>
+    <% for(var i = 0; i < files.length; i++) { %>
+    <% if (dir == '/') dir = ''; %>
+    <li><a href="<%= dir%>/<%= files[i]%>"><%= files[i] %></a></li>
+    <% } %>
+</ul>
+
+<% include footer %>
