@@ -1,6 +1,7 @@
 const express = require('express');
 const controller = require('./controllers/controller');
 const app = express();
+const port = process.env.PORT || 3000;
 
 //set the template engine
 app.set('view engine', 'ejs');
@@ -12,5 +13,6 @@ app.use(express.static('./public'));
 controller(app);
 
 //listen to port
-app.listen(3000);
-console.log("You're listening to port 3000...");
+app.listen(port, function() {
+    console.log("You're listening to port " + port);
+});
